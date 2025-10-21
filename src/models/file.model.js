@@ -1,6 +1,6 @@
 import mongoose, {Schema} from "mongoose";
 
-const noteSchema = new Schema(
+const fileSchema = new Schema(
     {
         file:{
             type: String,               //Cloudinary URL
@@ -21,4 +21,4 @@ const noteSchema = new Schema(
     }
 );
 
-export const Note = mongoose.model("Note", noteSchema);
+export const File = mongoose.model("File", fileSchema);
